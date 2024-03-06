@@ -21,8 +21,8 @@
 </div>
 
 <p align = "center">
- <img src="https://activity-graph.herokuapp.com/graph?username=524himanshu&theme=redical">
-</p> 
+ <img  src="https://github-readme-streak-stats.herokuapp.com/?user=524himanshu&show_icons=true&locale=en&layout=compact&theme=radical&line_height=0" />
+</p>
 
 
 ###
