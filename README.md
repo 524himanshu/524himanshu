@@ -31,14 +31,14 @@
 
 ###
 
-<p align="center">
+<div align="center">
 
 
  <img src="https://badges.pufler.dev/visits/524himanshu/524himanshu"/> 
  <img src="https://badges.pufler.dev/repos/524himanshu"/>
  <img src="https://badges.pufler.dev/commits/monthly/524himanshu" />
 
-</p>
+</div>
 
 ###
 
