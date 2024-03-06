@@ -16,7 +16,7 @@
 ###
 
 <h2 align="center">
-  My Github Stats>
+  My Github Stats
 </h2>
 
 <div align="center">
