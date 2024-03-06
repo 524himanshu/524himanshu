@@ -2,7 +2,7 @@
   <img src=images/Hello!.jpg />
 </div>
 
-<h2 align="left">Hi 👋! My name is Himanshu, from Mumbai! </h2>
+<h2 align="center">Hi 👋! My name is Himanshu, from Mumbai! </h2>
 
 <h2 >🌟 Exploring the Nexus of Technology: Information Technology Engineering Student at VESIT, Chembur 🌟</h2>
 
