@@ -75,6 +75,6 @@
 
 <br clear="both">
 
-<img src="snake.xml" alt="Snake animation" />
+<img src="https://raw.githubusercontent.com/524himanshu/524himanshu/output/snake.svg" alt="Snake animation" />
 
 ###
