@@ -1,5 +1,5 @@
 <div align="center">
-  <img height="150" src="https://camo.githubusercontent.com/62da68eb62b1e5f175f7d1f0191dd89a653d7908feb22d37d4a0ab07365d6791/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f4d3967624264396e6244724f5475314d71782f67697068792e676966"  />
+  <img height="150" src=https://github.com/524himanshu/524himanshu.github.io/blob/68f5bc89a12bf049c4563e0a225844c8eecfc3e0/photo.jpg />
 </div>
 
 <h2 align="left">Hi 👋! My name is ... and I'm a ..., from ....</h2>
