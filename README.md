@@ -48,7 +48,7 @@
   <a href="https://github.com/524himanshu">
   <img src="https://img.shields.io/static/v1?message=GitHub&logo=GitHub&label=&color=181717&logoColor=white&labelColor=181717&style=for-the-badge" height="35" alt="GitHub logo" />
   </a>
-  <a href="https://www.instagram.com/himanshumenghani524/"
+  <a href="https://www.instagram.com/himanshumenghani524/">
   <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo"  />
   </a>
   <a href="https://discord.com/users/922778102864691220">
