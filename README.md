@@ -7,7 +7,10 @@
 <h2 >🌟 Exploring the Nexus of Technology: Information Technology Engineering Student at VESIT, Chembur 🌟</h2>
 
 <p >
-  Greetings! I'm currently pursuing a degree in Information Technology Engineering from VESIT, Chembur. 🎓 Passionate about the ever-evolving world of technology, I'm on a quest to unravel the intricacies of IT and its limitless potential.
+  Greetings! I'm currently pursuing a degree in Information Technology Engineering from VESIT, Chembur.
+</p>
+<p>
+🎓 Passionate about the ever-evolving world of technology, I'm on a quest to unravel the intricacies of IT and its limitless potential.
 </p>
 
 <p >
