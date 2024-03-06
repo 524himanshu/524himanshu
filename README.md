@@ -4,6 +4,11 @@
 
 <h2 align="left">Hi 👋! My name is ... and I'm a ..., from ....</h2>
 
+ <img src="https://badges.pufler.dev/visits/524himanshu/"/> 
+ <!-- <img src="https://badges.pufler.dev/years/ritik307"/> -->
+ <img src="https://badges.pufler.dev/repos/524himanshu"/>
+ <img src="https://badges.pufler.dev/commits/monthly/524himanshu" />
+
 ###
 
 <div align="center">
