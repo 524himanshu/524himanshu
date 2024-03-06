@@ -54,10 +54,10 @@
   <a href="https://discord.com/users/922778102864691220">
   <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="discord logo"  />
   </a>
-  <a href="mailto: 2021.himanshu.menghani@ves.ac.in>
+  <a href="mailto: 2021.himanshu.menghani@ves.ac.in">
   <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
   </a>
-  <a href="https://www.linkedin.com/in/himanshumenghani524/>
+  <a href="https://www.linkedin.com/in/himanshumenghani524/">
   <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
   </a>
 </div>
