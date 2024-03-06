@@ -1,5 +1,5 @@
 <div align="center">
-  <img src=https://github.com/524himanshu/524himanshu.github.io/blob/68f5bc89a12bf049c4563e0a225844c8eecfc3e0/photo.jpg />
+  <img src=images/Hello!.jpg />
 </div>
 
 <h2 align="left">Hi 👋! My name is ... and I'm a ..., from ....</h2>
