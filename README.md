@@ -99,6 +99,9 @@
   <a href="https://www.linkedin.com/in/himanshumenghani524/">
   <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
   </a>
+  <a href="https://wordpress.com/read/feeds/136820917">
+  <img src="https://img.shields.io/badge/Wordpress-21759B?style=for-the-badge&logo=wordpress&logoColor=white" height="35" alt="Wordpress logo"  />
+  </a>
 </div>
 
 ###
