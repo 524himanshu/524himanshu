@@ -6,7 +6,7 @@
 
 <h2 >🌟 Exploring the Nexus of Technology: Information Technology Engineering Student at VESIT, Chembur 🌟</h2>
 
-<p >
+<p align="center">
   Greetings! I'm currently pursuing a degree in Information Technology Engineering from VESIT, Chembur.
 </p>
 <p>
