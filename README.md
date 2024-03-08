@@ -4,8 +4,7 @@
 
 <h2 align="center">Hi 👋! My name is Himanshu, I'm from Mumbai! </h2>
 
-<h2 align="center">Device Used 
-  <img src="images/republicofgamers-color.svg" height="30" alt="ROG logo"  /> Strix G15 </h2>
+<h2 align="center">Device Used: <img src="images/asus.svg" alt="ASUS Logo" height="30"/>  <img src="images/republicofgamers-color.svg" alt="Republic of Gamers Logo" height="30"/></h2> 
 
 
 <h2 >🌟 Exploring the Nexus of Technology: Information Technology Engineering Student at VESIT, Chembur 🌟</h2>
