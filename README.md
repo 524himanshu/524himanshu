@@ -4,7 +4,7 @@
 
 <h2 align="center">Hi 👋! My name is Himanshu, I'm from Mumbai! </h2>
 
-<h2 align="center">Device Used: <img src="images/republicofgamers-color.svg" alt="Republic of Gamers Logo" height="30"/></h2> 
+<h2 align="center">Device Used: <img src="https://img.shields.io/badge/Republic%20of%20Gamers-FF0029?style=for-the-badge&logo=Republic%20of%20Gamers&logoColor=white" height="30"/></h2> 
 
 
 <h2 >🌟 Exploring the Nexus of Technology: Information Technology Engineering Student at VESIT, Chembur 🌟</h2>
