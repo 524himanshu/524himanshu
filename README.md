@@ -7,8 +7,8 @@
 <h2 align="center">Device Used</h2>
 
 <div align="center">
-  <img src="https://img.icons8.com/color/48/000000/republic-of-gamers.png" alt="Republic of Gamers Logo" />
-  <p>Device: Republic of Gamers Laptop</p>
+  <img src="images/republicofgamers-color.svg" height="30" alt="ROG logo"  />
+  <p>Device: Republic of Gamers Strix G15 Laptop</p>
 </div>
 
 
