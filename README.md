@@ -3,7 +3,7 @@
 </div>
 
 <h2 align="center">Hi 👋! My name is Himanshu, I'm from Mumbai! </h2>
-<p align="center"
+<p align="center">
 <a href="https://github.com/hariprasd/hariprasd/raw/main/readme-hariprasd.pdf">Click here to download this README as PDF ↓</a>
 </p>
 
