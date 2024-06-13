@@ -3,6 +3,9 @@
 </div>
 
 <h2 align="center">Hi 👋! My name is Himanshu, I'm from Mumbai! </h2>
+<div align="center">
+<a href="https://github.com/hariprasd/hariprasd/raw/main/readme-hariprasd.pdf">Click here to download this README as PDF ↓</a>
+</div>
 
 <h2 align="center">Device Used: <img src="https://img.shields.io/badge/Republic%20of%20Gamers-FF0029?style=for-the-badge&logo=Republic%20of%20Gamers&logoColor=white" height="30"/></h2> 
 
@@ -104,10 +107,8 @@
 </div>
 
 ###
-<div align="center">
-<a href="https://github.com/hariprasd/hariprasd/raw/main/readme-hariprasd.pdf">Click here to download this README as PDF ↓</a>
-</div>
-###
+
+
 
 <h2 align="center">Reach me out on </h2>
 
