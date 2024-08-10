@@ -45,6 +45,14 @@
 
 ###
 
+
+<div align="center">
+<a href="https://app.daily.dev/himanshumenghani524"><img src="https://api.daily.dev/devcards/v2/1hCXRTserlte40Z6hc8gH.png?r=lzy&type=wide" width="652" alt="Himanshu Menghani's Dev Card"/></a>
+</div>
+
+
+###
+
 <h2 align="center">
   My Github Stats
 </h2>
