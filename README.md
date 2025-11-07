@@ -35,8 +35,7 @@
 
 <p align="center">
   <img 
-       src="https://streak-stats.demolab.com?user=524himanshu&theme=tokyonight&hide_border=true&border_radius=10&date_format=j%20M%5B%20Y%5D"
-       alt="GitHub Streak Stats" 
+       [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=524himanshu)](https://git.io/streak-stats)
        height="180" />
 </p>
 
