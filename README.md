@@ -27,13 +27,14 @@
 <h3 align="center">📈 GitHub Stats</h3>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=524himanshu&show_icons=true&theme=tokyonight&count_private=true&hide_border=true" height="150"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=524himanshu&layout=compact&theme=tokyonight&hide_border=true" height="150"/>
+  <img height="150" src="https://github-readme-stats.vercel.app/api?username=524himanshu&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="GitHub stats" />
+  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=524himanshu&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
 </div>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=524himanshu&theme=tokyonight&hide_border=true" height="150"/>
+  <img height="150" src="https://streak-stats.demolab.com?user=524himanshu&theme=tokyonight&hide_border=true" alt="GitHub Streak Stats" />
 </p>
+
 
 ---
 
@@ -72,9 +73,9 @@
 <h3 align="center">📊 Profile Insights</h3>
 
 <div align="center">
-  <img src="https://badges.pufler.dev/visits/524himanshu/524himanshu"/>
-  <img src="https://badges.pufler.dev/repos/524himanshu"/>
-  <img src="https://badges.pufler.dev/commits/monthly/524himanshu"/>
+  <img src="https://komarev.com/ghpvc/?username=524himanshu&style=for-the-badge&color=blueviolet" alt="Profile Views" />
+  <img src="https://img.shields.io/github/followers/524himanshu?label=Followers&style=for-the-badge&color=0E75B6" alt="GitHub Followers" />
+  <img src="https://img.shields.io/github/stars/524himanshu?label=Stars&style=for-the-badge&color=yellow" alt="GitHub Stars" />
 </div>
 
 ---
