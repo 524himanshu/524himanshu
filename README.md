@@ -31,9 +31,15 @@
   <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=524himanshu&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
 </div>
 
+<h3 align="center">🔥 GitHub Streaks</h3>
+
 <p align="center">
-  <img height="150" src="https://streak-stats.demolab.com?user=524himanshu&theme=tokyonight&hide_border=true" alt="GitHub Streak Stats" />
+  <img 
+       src="https://streak-stats.demolab.com?user=524himanshu&theme=tokyonight&hide_border=true&border_radius=10&date_format=j%20M%5B%20Y%5D"
+       alt="GitHub Streak Stats" 
+       height="180" />
 </p>
+
 
 
 ---
