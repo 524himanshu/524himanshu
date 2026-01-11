@@ -20,8 +20,8 @@
 <h3 align="center">📈 GitHub Stats</h3>
 
 <div align="center">
-  <img height="150" src="https://github-readme-stats.vercel.app/api?username=524himanshu&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="GitHub stats" />
-  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=524himanshu&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+  <img height="160" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=524himanshu&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img height="160" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=524himanshu&layout=compact&theme=tokyonight&hide_border=true" />
 </div>
 
 <h3 align="center">🔥 GitHub Streaks</h3>
