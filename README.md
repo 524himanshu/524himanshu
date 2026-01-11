@@ -8,11 +8,6 @@
 
 ---
 
-<h3 align="center">💻 Device Used:</h3>
-<p align="center">
-  <img src="https://img.shields.io/badge/Republic%20of%20Gamers-FF0029?style=for-the-badge&logo=Republic%20of%20Gamers&logoColor=white" height="30"/>
-</p>
-
 ---
 
 ### 🌟 About Me  
