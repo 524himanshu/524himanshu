@@ -8,8 +8,6 @@
 
 ---
 
----
-
 ### 🌟 About Me  
 
 🎓 I’m pursuing **Information Technology Engineering** at **VESIT, Chembur**  
