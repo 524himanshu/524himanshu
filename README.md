@@ -20,16 +20,18 @@
 <h3 align="center">📈 GitHub Stats</h3>
 
 <div align="center">
-  <img height="160" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=524himanshu&show_icons=true&theme=tokyonight&hide_border=true" />
-  <img height="160" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=524himanshu&layout=compact&theme=tokyonight&hide_border=true" />
+  <img height="160"
+    src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=524himanshu&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img height="160"
+    src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=524himanshu&layout=compact&theme=tokyonight&hide_border=true" />
 </div>
 
 <h3 align="center">🔥 GitHub Streaks</h3>
 
 <p align="center">
   <img 
-       [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=524himanshu)](https://git.io/streak-stats)
-       height="180" />
+       [![GitHub Streak](  <img src="https://streak-stats.demolab.com?user=524himanshu&theme=tokyonight&hide_border=true" />
+ />
 </p>
 
 
