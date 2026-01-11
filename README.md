@@ -4,7 +4,7 @@
 
 <h2 align="center">Hi 👋! I'm <strong>Himanshu</strong> from Mumbai, India 🇮🇳</h2>
 
-<h3 align="center">💻 Full Stack + AI Developer | React ⚡ Flask ⚡ OpenAI API</h3>
+<h3 align="center">💻 Aspring Software Engineer 
 
 ---
 
