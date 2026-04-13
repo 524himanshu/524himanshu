@@ -53,9 +53,9 @@ Currently targeting SDE roles at product companies and actively building in publ
 
 ## ◾ GitHub Stats
 
-[![Stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=524himanshu&show_icons=true&theme=github_dark&hide_border=true)](https://github.com/524himanshu)
+[![Stats](https://github-readme-stats.vercel.app/api?username=524himanshu&show_icons=true&theme=github_dark&hide_border=true)](https://github.com/524himanshu)
 &nbsp;
-[![Top Langs](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=524himanshu&layout=compact&theme=github_dark&hide_border=true)](https://github.com/524himanshu)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=524himanshu&layout=compact&theme=github_dark&hide_border=true)](https://github.com/524himanshu)
 
 [![Streak](https://streak-stats.demolab.com?user=524himanshu&theme=github-dark&hide_border=true)](https://github.com/524himanshu)
 
@@ -69,4 +69,8 @@ Currently targeting SDE roles at product companies and actively building in publ
 
 ---
 
+<div align="center">
+
 *Open to work. Mumbai-based. Building things that actually run.*
+
+</div>
