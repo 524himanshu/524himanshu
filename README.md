@@ -37,7 +37,7 @@ Currently targeting SDE roles at product companies and actively building in publ
 | Project | Description | Stack | Link |
 |---|---|---|---|
 | **AI Hiring Tool** | Resume parsing + candidate scoring powered by Claude API | `Next.js` `Claude API` `MongoDB` | [In Progress](https://github.com/524himanshu) |
-| **AI Health Diagnostics** | Symptom-based diagnostics using Gemini API with ML backend | `Next.js` `Flask` `MongoDB` `Gemini` | [Live ↗](https://github.com/524himanshu/health-diagnostics-ai) |
+| **AI Health Diagnostics** | Symptom-based diagnostics using Gemini API with ML backend | `Next.js` `Flask` `MongoDB` `Gemini` | [In Progress](https://github.com/524himanshu/health-diagnostics-ai) |
 | **CF AI Web Coach** | Career coaching chatbot deployed on Cloudflare Workers | `Cloudflare Workers` `LLM API` | [Live ↗](https://cf-ai-web-coach.himanshu524.workers.dev) |
 | **Student Portal** | Role-based student management with session auth | `Node.js` `MongoDB` `HTML` | [Code](https://github.com/524himanshu/studentportal) |
 | **Parkinson's Prediction** | ML pipeline for early Parkinson's detection | `Python` `Scikit-learn` | [Code](https://github.com/524himanshu/Parkinsons-updated-final) |
