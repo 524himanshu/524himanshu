@@ -6,8 +6,8 @@ class HimanshuMenghani {
     String   internship = "Web Dev Intern @ OctaNet Services Pvt Ltd";
 
     String[] building   = {
-        "AI Hiring Tool — Claude API, resume parsing, candidate scoring",
-        "AI Health Diagnostics Platform — Next.js, Flask, Gemini API (live)",
+        "AI Hiring Tool — Claude API, resume parsing, candidate scoring [In Progress]",
+        "AI Health Diagnostics Platform — Next.js, Flask, Gemini API [In Progress]",
         "CF AI Web Coach — Cloudflare Workers + LLM (live)"
     };
 
