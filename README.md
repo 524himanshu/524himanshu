@@ -6,14 +6,14 @@ class HimanshuMenghani {
     String   internship = "Web Dev Intern @ OctaNet Services Pvt Ltd";
 
     String[] building   = {
-        "AI Hiring Tool — Claude API, resume parsing, candidate scoring [In Progress]",
-        "AI Health Diagnostics Platform — Next.js, Flask, Gemini API [In Progress]",
-        "CF AI Web Coach — Cloudflare Workers + LLM (live)"
+        "CodeMate — AI-powered Career OS & sandbox compiler engine (live)",
+        "DrishtiAI — Real-time adverse event detector, AI for Bharat 2026 Shortlist (live)",
+        "RecruitIQ — AI candidate ranking & job fit scorer (live)"
     };
 
     String[] stack      = {
-        "Next.js · React · Flask · Python · MongoDB",
-        "Flutter · Firebase · Gemini API · Claude API"
+        "Next.js · React · FastAPI · Django · Python",
+        "WebSockets · Docker · Celery · Redis · Supabase"
     };
 
     String   openTo     = "SDE Roles · Full-Stack · AI/LLM Products · Mumbai or Remote";
@@ -36,18 +36,18 @@ Currently targeting SDE roles at product companies and actively building in publ
 
 | Project | Description | Stack | Link |
 |---|---|---|---|
-| **AI Hiring Tool** | Resume parsing + candidate scoring powered by Claude API | `Next.js` `Claude API` `MongoDB` | [In Progress](https://github.com/524himanshu) |
-| **AI Health Diagnostics** | Symptom-based diagnostics using Gemini API with ML backend | `Next.js` `Flask` `MongoDB` `Gemini` | [In Progress](https://github.com/524himanshu/health-diagnostics-ai) |
-| **CF AI Web Coach** | Career coaching chatbot deployed on Cloudflare Workers | `Cloudflare Workers` `LLM API` | [Live ↗](https://cf-ai-web-coach.himanshu524.workers.dev) |
-| **Student Portal** | Role-based student management with session auth | `Node.js` `MongoDB` `HTML` | [Code](https://github.com/524himanshu/studentportal) |
-| **Parkinson's Prediction** | ML pipeline for early Parkinson's detection | `Python` `Scikit-learn` | [Code](https://github.com/524himanshu/Parkinsons-updated-final) |
-| **Smart Recipe App** | Recipe finder mobile app | `Flutter` `Firebase` | [Code](https://github.com/524himanshu) |
+| **CodeMate** | AI-powered Career Operating System & active engineering learning simulator with sandboxed code execution, call-stack whiteboard tracing, WebSockets, and spaced-repetition scheduler. | `Next.js` `FastAPI` `WebSockets` `Docker` `Supabase` | [Live ↗](https://codemate-os.vercel.app/) |
+| **DrishtiAI** | Real-time pharmacovigilance adverse event detector. Selected for the Prototype Phase of AI for Bharat 2026 (national AI innovation hackathon). | `Next.js` `FastAPI` `PostgreSQL` `Redis` `Docker` `scispaCy` | [Live ↗](https://drishti-ai-1.onrender.com) |
+| **RecruitIQ** | Multi-signal candidate scoring and semantic vector resume ranking system. | `Streamlit` `LlamaIndex` `Python` `OpenAI` | [Live ↗](https://recruitiq-redrob.streamlit.app/) |
+| **OfferForge** | AI career preparation suite with client-side PII redaction shield and interview prep sandboxes. | `Next.js` `Groq API` `docx` | [Live ↗](https://cf-ai-web-coach.himanshu524.workers.dev) |
+| **Playto Payout** | Asynchronous payout ledger processing system using transactional Celery queue. | `Django` `DRF` `Celery` `Redis` `PostgreSQL` | [Code ↗](https://github.com/524himanshu/playto-payout) |
+| **Student Portal** | Role-based student management with session auth. | `Node.js` `MongoDB` `HTML` | [Code ↗](https://github.com/524himanshu/studentportal) |
 
 ---
 
 ## ◾ Stack
 
-`Next.js` `React` `Node.js` `Flask` `Python` `MongoDB` `Firebase` `Flutter` `Dart` `MySQL` `Gemini API` `Claude API` `Cloudflare Workers` `Git` `GitHub Actions`
+`Next.js` `React` `Node.js` `FastAPI` `FastAPI WebSockets` `Django` `Flask` `Python` `Celery` `Redis` `PostgreSQL` `MongoDB` `Firebase` `Flutter` `Dart` `MySQL` `Gemini API` `Claude API` `Groq API` `Docker` `Git` `GitHub Actions`
 
 ---
 
@@ -63,9 +63,11 @@ Currently targeting SDE roles at product companies and actively building in publ
 
 ## ◾ Connect
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://himanshu-menghani.vercel.app/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/himanshumenghani524)
-[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:himanshumenghani524@gmail.com)
+| Portal | Link |
+|---|---|
+| 🌐 **Portfolio** | [himanshu-menghani.vercel.app](https://himanshu-menghani.vercel.app/) |
+| 💼 **LinkedIn** | [/in/himanshumenghani524](https://linkedin.com/in/himanshumenghani524) |
+| ✉️ **Email** | [himanshumenghani524@gmail.com](mailto:himanshumenghani524@gmail.com) |
 
 ---
 
