@@ -39,7 +39,8 @@ Currently targeting SDE roles at product companies and actively building in publ
 | **CodeMate** | AI-powered Career Operating System & active engineering learning simulator with sandboxed code execution, call-stack whiteboard tracing, WebSockets, and spaced-repetition scheduler. | `Next.js` `FastAPI` `WebSockets` `Docker` `Supabase` | [Live ↗](https://codemate-os.vercel.app/) |
 | **DrishtiAI** | Real-time pharmacovigilance adverse event detector. Selected for the Prototype Phase of AI for Bharat 2026 (national AI innovation hackathon). | `Next.js` `FastAPI` `PostgreSQL` `Redis` `Docker` `scispaCy` | [Live ↗](https://drishti-ai-1.onrender.com) |
 | **RecruitIQ** | Multi-signal candidate scoring and semantic vector resume ranking system. | `Streamlit` `LlamaIndex` `Python` `OpenAI` | [Live ↗](https://recruitiq-redrob.streamlit.app/) |
-| **OfferForge** | AI career preparation suite with client-side PII redaction shield and interview prep sandboxes. | `Next.js` `Groq API` `docx` | [Live ↗](https://cf-ai-web-coach.himanshu524.workers.dev) |
+| **OfferForge** | AI career preparation suite with client-side PII redaction shield and interview prep sandboxes. | `Next.js` `Groq API` `docx` | [Code ↗](https://github.com/524himanshu/OfferForge) |
+| **CF AI Web Coach** | Career coaching chatbot deployed on Cloudflare Workers. | `Cloudflare Workers` `LLM API` | [Live ↗](https://cf-ai-web-coach.himanshu524.workers.dev) |
 | **Playto Payout** | Asynchronous payout ledger processing system using transactional Celery queue. | `Django` `DRF` `Celery` `Redis` `PostgreSQL` | [Code ↗](https://github.com/524himanshu/playto-payout) |
 | **Student Portal** | Role-based student management with session auth. | `Node.js` `MongoDB` `HTML` | [Code ↗](https://github.com/524himanshu/studentportal) |
 
