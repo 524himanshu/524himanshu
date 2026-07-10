@@ -38,7 +38,7 @@ Currently targeting SDE roles at product companies and actively building in publ
 | Project | Description | Stack | Link |
 |---|---|---|---|
 | **CodeMate** | AI-powered Career Operating System & active engineering learning simulator with sandboxed code execution, call-stack whiteboard tracing, WebSockets, and spaced-repetition scheduler. | `Next.js` `FastAPI` `WebSockets` `Docker` `Supabase` | [Live ↗](https://codemate-os.vercel.app/) |
-| **DrishtiAI** | Real-time pharmacovigilance adverse event detector. Selected for the Prototype Phase of AI for Bharat 2026 (national AI innovation hackathon). | `Next.js` `FastAPI` `PostgreSQL` `Redis` `Docker` `scispaCy` | [Live ↗](https://drishti-ai-1.onrender.com) |
+| **DrishtiAI** | Real-time pharmacovigilance adverse event detector. Selected for the Prototype Phase of AI for Bharat 2026 (national AI innovation hackathon). | `Next.js` `FastAPI` `PostgreSQL` `Redis` `Docker` `scispaCy` | [Code ↗](https://github.com/524himanshu/drishti-ai) |
 | **RecruitIQ** | Multi-signal candidate scoring and semantic vector resume ranking system. | `Streamlit` `LlamaIndex` `Python` `OpenAI` | [Live ↗](https://recruitiq-redrob.streamlit.app/) |
 | **OfferForge** | AI career preparation suite with client-side PII redaction shield and interview prep sandboxes. | `Next.js` `Groq API` `docx` | [Live ↗](https://offerforge.vercel.app/) · [Code ↗](https://github.com/524himanshu/OfferForge) |
 | **CF AI Web Coach** | Career coaching chatbot deployed on Cloudflare Workers. | `Cloudflare Workers` `LLM API` | [Live ↗](https://cf-ai-web-coach.himanshu524.workers.dev) |
