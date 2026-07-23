@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="dark.svg?v=10">
-  <source media="(prefers-color-scheme: light)" srcset="light.svg?v=10">
-  <img alt="Himanshu Menghani - Full Stack Developer &amp; AI Engineer" src="dark.svg?v=10" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="dark.svg?v=100">
+  <source media="(prefers-color-scheme: light)" srcset="light.svg?v=100">
+  <img alt="Himanshu Menghani - Full Stack Developer &amp; AI Engineer" src="dark.svg?v=100" width="100%">
 </picture>
 
 <br>
