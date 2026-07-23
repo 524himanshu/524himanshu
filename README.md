@@ -1,8 +1,14 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="dark.svg?v=5">
-  <source media="(prefers-color-scheme: light)" srcset="light.svg?v=5">
-  <img alt="Himanshu Menghani - Full Stack Developer &amp; AI Engineer" src="dark.svg?v=5" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="dark.svg?v=6">
+  <source media="(prefers-color-scheme: light)" srcset="light.svg?v=6">
+  <img alt="Himanshu Menghani - Full Stack Developer &amp; AI Engineer" src="dark.svg?v=6" width="100%">
 </picture>
+
+<br>
+
+<div align="center">
+  <img alt="Himanshu's Live GitHub Contribution Heatmap" src="contrib-heatmap.svg?v=6" width="100%">
+</div>
 
 <br>
 

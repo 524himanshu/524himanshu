@@ -1,71 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="1180" height="610">
   <defs>
-    <!-- Light Mode Color Palette Gradients -->
-    <linearGradient id="bg-grad-light" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FFFFFF" />
       <stop offset="50%" stop-color="#F1F5F9" />
       <stop offset="100%" stop-color="#FFFFFF" />
     </linearGradient>
-
-    <linearGradient id="panel-grad-light" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="panel-grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#F8FAFC" stop-opacity="0.95" />
-      <stop offset="100%" stop-color="#E2E8F0" stop-opacity="0.80" />
+      <stop offset="100%" stop-color="#F8FAFC" stop-opacity="0.80" />
     </linearGradient>
-
-    <linearGradient id="accent-grad-light" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#2563EB" />
       <stop offset="50%" stop-color="#06B6D4" />
       <stop offset="100%" stop-color="#10B981" />
     </linearGradient>
-
-    <linearGradient id="ascii-grad-light" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2563EB">
-        <animate attributeName="stop-color" values="#2563EB; #06B6D4; #10B981; #2563EB" dur="8s" repeatCount="indefinite" />
+    <linearGradient id="ascii-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4">
+        <animate attributeName="stop-color" values="#06B6D4; #2563EB; #10B981; #06B6D4" dur="8s" repeatCount="indefinite" />
       </stop>
-      <stop offset="100%" stop-color="#06B6D4">
-        <animate attributeName="stop-color" values="#06B6D4; #10B981; #2563EB; #06B6D4" dur="8s" repeatCount="indefinite" />
+      <stop offset="100%" stop-color="#2563EB">
+        <animate attributeName="stop-color" values="#2563EB; #10B981; #06B6D4; #2563EB" dur="8s" repeatCount="indefinite" />
       </stop>
     </linearGradient>
-
-    <linearGradient id="border-shimmer-light" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="rgba(15,23,42,0.05)" />
-      <stop offset="50%" stop-color="rgba(37,99,235,0.4)" />
-      <stop offset="100%" stop-color="rgba(15,23,42,0.05)" />
+    <linearGradient id="border-shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.05)" />
+      <stop offset="50%" stop-color="#2563EB" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0.05)" />
       <animateTransform attributeName="gradientTransform" type="translate" from="-1180 0" to="1180 0" dur="6s" repeatCount="indefinite" />
     </linearGradient>
-
-    <!-- Floating Background Orbs -->
-    <radialGradient id="orb-blue-light" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.12" />
+    <radialGradient id="orb-1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.25" />
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
     </radialGradient>
-
-    <radialGradient id="orb-cyan-light" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.10" />
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
-    </radialGradient>
-
-    <!-- Glassmorphism Drop Shadow -->
-    <filter id="shadow-light" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#64748B" flood-opacity="0.15" />
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.5" />
     </filter>
   </defs>
-
   <style>
-    @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-7px); }
-    }
-    @keyframes pulseGlow {
-      0%, 100% { opacity: 0.4; }
-      50% { opacity: 0.7; }
-    }
-    @keyframes blink {
-      0%, 49% { opacity: 1; }
-      50%, 100% { opacity: 0; }
-    }
-
-    .bg-animate { animation: pulseGlow 6s ease-in-out indefinite alternate; }
+    @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-7px); } }
+    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
     .floating-box { animation: float 6s ease-in-out infinite; }
     .cursor { animation: blink 1s step-end infinite; }
     .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
@@ -73,214 +46,115 @@
     .pill { transition: all 0.3s ease; }
     .pill:hover { fill: #2563EB; }
   </style>
-
-  <!-- Background Base -->
-  <rect width="1180" height="610" rx="24" fill="url(#bg-grad-light)" />
-
-  <!-- Background Animated Glowing Ambient Orbs -->
-  <circle cx="200" cy="150" r="320" fill="url(#orb-blue-light)" class="bg-animate" />
-  <circle cx="950" cy="450" r="360" fill="url(#orb-cyan-light)" class="bg-animate" />
-
-  <!-- Grid Pattern Overlay -->
-  <g opacity="0.06" stroke="#0F172A" stroke-width="1">
-    <pattern id="grid-light" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" />
-    </pattern>
-    <rect width="1180" height="610" fill="url(#grid-light)" />
-  </g>
-
-  <!-- Animated Moving Scanline -->
-  <rect width="1180" height="2" fill="url(#accent-grad-light)" opacity="0.2">
-    <animateTransform attributeName="gradientTransform" type="translate" from="0 -610" to="0 610" dur="8s" repeatCount="indefinite" />
-  </rect>
-
-  <!-- Main Container Card (Glassmorphism) -->
-  <rect x="20" y="20" width="1140" height="570" rx="20" fill="url(#panel-grad-light)" stroke="rgba(15,23,42,0.08)" stroke-width="1.5" filter="url(#shadow-light)" />
-  <rect x="20" y="20" width="1140" height="570" rx="20" fill="none" stroke="url(#border-shimmer-light)" stroke-width="1.5" />
-
-  <!-- ========================================== -->
-  <!-- LEFT SIDE: ANIMATED ASCII PORTRAIT & CYBER CARD (38%) -->
-  <!-- ========================================== -->
+  <rect width="1180" height="610" rx="24" fill="url(#bg-grad)" />
+  <circle cx="200" cy="150" r="320" fill="url(#orb-1)" />
+  <rect x="20" y="20" width="1140" height="570" rx="20" fill="url(#panel-grad)" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" filter="url(#shadow)" />
+  <rect x="20" y="20" width="1140" height="570" rx="20" fill="none" stroke="url(#border-shimmer)" stroke-width="1.5" />
   <g transform="translate(45, 45)" class="floating-box">
-    <!-- ASCII Card Container -->
-    <rect width="400" height="520" rx="16" fill="#F1F5F9" fill-opacity="0.9" stroke="rgba(37,99,235,0.25)" stroke-width="1.5" />
-
-    <!-- Terminal Header Buttons -->
+    <rect width="400" height="520" rx="16" fill="#F8FAFC" fill-opacity="0.95" stroke="rgba(34,211,238,0.25)" stroke-width="1.5" />
     <circle cx="24" cy="24" r="6" fill="#EF4444" opacity="0.8" />
     <circle cx="44" cy="24" r="6" fill="#F59E0B" opacity="0.8" />
     <circle cx="64" cy="24" r="6" fill="#10B981" opacity="0.8" />
-    <text x="200" y="28" font-size="12" class="font-mono" fill="#475569" text-anchor="middle" opacity="0.7">himanshu@builder:~$ ./portrait</text>
-
-    <!-- Line Divider -->
-    <line x1="1" y1="45" x2="399" y2="45" stroke="rgba(15,23,42,0.08)" stroke-width="1" />
-
-    <!-- Clean Vector & ASCII Block Section -->
-    <g transform="translate(20, 65)">
-      <!-- Animated Title Banner -->
-      <g fill="url(#ascii-grad-light)">
-        <text y="20" font-size="22" class="font-mono" font-weight="800" letter-spacing="3">H I M A N S H U</text>
-        <text y="38" font-size="12" class="font-mono" fill="#2563EB" letter-spacing="4">M E N G H A N I</text>
-      </g>
-
-      <!-- Cyber Terminal Box -->
-      <g transform="translate(0, 55)" class="font-mono" font-size="11">
-        <!-- Box Outline -->
-        <rect width="360" height="150" rx="10" fill="#E2E8F0" stroke="rgba(37,99,235,0.2)" stroke-width="1" />
-        
-        <text x="15" y="25" fill="#2563EB" font-weight="700">⚡ SYSTEM CAPABILITIES</text>
-        <line x1="15" y1="34" x2="345" y2="34" stroke="rgba(15,23,42,0.08)" stroke-width="1" />
-
-        <text x="15" y="55" fill="#0F172A">• FastAPI + Next.js Stack</text>
-        <text x="15" y="75" fill="#0F172A">• Python sys.settrace AST Tracer</text>
-        <text x="15" y="95" fill="#0F172A">• Presidio PII Redaction Shield</text>
-        <text x="15" y="115" fill="#0F172A">• WebSockets &lt;50ms Synchronization</text>
-        <text x="15" y="135" fill="#2563EB" font-weight="600">» Flagship: DrishtiAI | CodeMate</text>
-      </g>
-
-      <!-- Status Metrics List -->
-      <g transform="translate(0, 230)" class="font-mono" font-size="11">
-        <text y="0" fill="#10B981" font-weight="600">[✓] STATUS: OPEN FOR ROLES &amp; RELOCATION</text>
-        <text y="22" fill="#2563EB" font-weight="600">[✓] CODEBASE: 4+ PRODUCTION PROJECTS</text>
-        <text y="44" fill="#06B6D4" font-weight="600">[✓] HACKATHON: AI FOR BHARAT 2026 FINALIST</text>
-      </g>
-
-      <!-- Interactive System Check Output -->
-      <g transform="translate(0, 310)" class="font-mono" font-size="11">
-        <text y="0" fill="#0F172A" font-weight="600">&gt; executing system check...</text>
-        <text y="20" fill="#475569">  - WebSockets &lt;50ms: <tspan fill="#10B981">PASS</tspan></text>
-        <text y="38" fill="#475569">  - PII Redaction &lt;15ms: <tspan fill="#10B981">PASS</tspan></text>
-        <text y="56" fill="#475569">  - Compiler Sandbox: <tspan fill="#2563EB">SECURE</tspan></text>
-
-        <text y="90" fill="#2563EB" font-weight="600">&gt; Ready for impact<tspan class="cursor" fill="#2563EB">█</tspan></text>
+    <text x="200" y="28" font-size="12" class="font-mono" fill="#475569" text-anchor="middle" opacity="0.7">himanshu@portrait:~$ ./ascii_art</text>
+    <line x1="1" y1="45" x2="399" y2="45" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+    <g transform="translate(15, 60)" font-size="8.5" class="font-mono" fill="url(#ascii-grad)">
+      <clipPath id="ascii-clip">
+        <rect x="0" y="0" width="370" height="430">
+          <animate attributeName="height" from="0" to="430" dur="2.5s" fill="freeze" />
+        </rect>
+      </clipPath>
+      <g clip-path="url(#ascii-clip)">
+        <text y="12">         ..:::::::-----------:::            </text>
+        <text y="24">         ::-----------=-==-----:            </text>
+        <text y="36">         ==================-=--.            </text>
+        <text y="48">         +++++++++++========-==.            </text>
+        <text y="60">         *++************++===+-             </text>
+        <text y="72">         ===-----------------=:.            </text>
+        <text y="84">                  ......:::::-:-=           </text>
+        <text y="96">         .  ...........:::::-=:#+           </text>
+        <text y="108">                   ....:::::--+@+           </text>
+        <text y="120">         :::::::---+ssssssssss%%+           </text>
+        <text y="132">         +=====++++*s###%@@@@@%@*           </text>
+        <text y="144">         -::-----==+ss##%%%%%%%@*           </text>
+        <text y="156">               ....=ss##%%%%@%%@*           </text>
+        <text y="168">                   .#s##%%%%@%%@s           </text>
+        <text y="180">                   .#s##%%%@@@%@s           </text>
+        <text y="192">                   .#ss#%%%@@@%@#           </text>
+        <text y="204">                   :%####%%%%@%@#           </text>
+        <text y="216">                   :@@@@%%%%@@%@#           </text>
+        <text y="228">         :..       :%*=+%%%@@@%@%.          </text>
+        <text y="240">         ::...     .=   +#%@@@%@%:.         </text>
+        <text y="252">         --:::.  .:-+=--=%%@@@%@%:.         </text>
+        <text y="264">         =----::+**#@*==.#@%@%@@%-:         </text>
+        <text y="276">         +====-=#-+@%%#*:#@%@@@@@=:         </text>
+        <text y="288">         *+++==#s+%%%%@@s+%%@@@%@+-         </text>
+        <text y="300">         ****+*@@@@%@%%%%+#@%@@%@+-         </text>
+        <text y="312">         s*****##s%%@%@@%%@@@@@%@*=         </text>
+        <text y="334" fill="#10B981" font-weight="700">[✓] PHOTO ASCII: GENERATED FROM AVATAR</text>
+        <text y="349" fill="#06B6D4" font-weight="700">&gt; Status: Open for Work <tspan class="cursor" fill="#06B6D4">█</tspan></text>
       </g>
     </g>
   </g>
-
-  <!-- ========================================== -->
-  <!-- RIGHT SIDE: TERMINAL UI & DETAILS (62%) -->
-  <!-- ========================================== -->
   <g transform="translate(480, 45)">
-    <!-- Right Window Terminal Bar -->
-    <rect width="650" height="520" rx="16" fill="#F8FAFC" fill-opacity="0.95" stroke="rgba(15,23,42,0.08)" stroke-width="1.5" />
-    
-    <!-- Window Bar Controls -->
+    <rect width="650" height="520" rx="16" fill="#F8FAFC" fill-opacity="0.95" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
     <circle cx="24" cy="24" r="6" fill="#EF4444" opacity="0.8" />
     <circle cx="44" cy="24" r="6" fill="#F59E0B" opacity="0.8" />
     <circle cx="64" cy="24" r="6" fill="#10B981" opacity="0.8" />
     <text x="325" y="28" font-size="12" class="font-mono" fill="#475569" text-anchor="middle" opacity="0.7">himanshu_menghani.config.json</text>
-    <line x1="1" y1="45" x2="649" y2="45" stroke="rgba(15,23,42,0.08)" stroke-width="1" />
-
-    <!-- Content Group -->
+    <line x1="1" y1="45" x2="649" y2="45" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
     <g transform="translate(30, 75)">
-      <!-- Greeting Header -->
-      <text y="0" font-size="28" class="font-sans" font-weight="700" fill="#0F172A">Hi 👋 I'm <tspan fill="url(#accent-grad-light)">Himanshu Menghani</tspan></text>
-
-      <!-- Fixed Typing Role Loop (Single line, no overlap) -->
+      <text y="0" font-size="28" class="font-sans" font-weight="700" fill="#0F172A">Hi 👋 I'm <tspan fill="url(#accent-grad)">Himanshu Menghani</tspan></text>
       <g transform="translate(0, 32)" class="font-mono" font-size="16">
-        <text y="0" fill="#2563EB">&gt; 
-          <tspan font-weight="600">
-            <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.45;0.5;1" dur="10s" repeatCount="indefinite" />Full-Stack Developer &amp; AI Engineer
-          </tspan>
-        </text>
-        <text y="0" fill="#10B981">
-          <tspan font-weight="600" dx="18">
-            <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.5;0.55;1" dur="10s" repeatCount="indefinite" />FastAPI, Next.js &amp; RAG Specialist
-          </tspan>
-        </text>
+        <text y="0" fill="#06B6D4">&gt; <tspan font-weight="600"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.45;0.5;1" dur="10s" repeatCount="indefinite" />Full-Stack Developer &amp; AI Engineer</tspan></text>
+        <text y="0" fill="#10B981"><tspan font-weight="600" dx="18"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.5;0.55;1" dur="10s" repeatCount="indefinite" />FastAPI, Next.js &amp; RAG Specialist</tspan></text>
       </g>
-
-      <!-- Divider -->
-      <line x1="0" y1="48" x2="590" y2="48" stroke="rgba(15,23,42,0.08)" stroke-width="1" />
-
-      <!-- Sequential Key Details -->
+      <line x1="0" y1="48" x2="590" y2="48" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
       <g transform="translate(0, 78)" font-size="13.5" class="font-mono">
-        <g transform="translate(0, 0)">
-          <text fill="#2563EB" font-weight="600">📍 Location:</text>
-          <text x="120" fill="#0F172A">Mumbai, India <tspan fill="#475569">(Open to Remote &amp; Relocation)</tspan></text>
-        </g>
-        
-        <g transform="translate(0, 26)">
-          <text fill="#06B6D4" font-weight="600">🎓 Education:</text>
-          <text x="120" fill="#0F172A">B.E. Information Technology <tspan fill="#475569">(Mumbai Univ, 2024)</tspan></text>
-        </g>
-
-        <g transform="translate(0, 52)">
-          <text fill="#10B981" font-weight="600">🚀 Core Focus:</text>
-          <text x="120" fill="#0F172A">High-Throughput Backends, LLM Agents, WebSockets</text>
-        </g>
-
-        <g transform="translate(0, 78)">
-          <text fill="#F59E0B" font-weight="600">🌐 Portfolio:</text>
-          <text x="120" fill="#2563EB" text-decoration="underline">himanshu-menghani.vercel.app</text>
-        </g>
-
-        <g transform="translate(0, 104)">
-          <text fill="#EC4899" font-weight="600">✉️ Contact:</text>
-          <text x="120" fill="#0F172A">himanshumenghani524@gmail.com</text>
-        </g>
+        <g><text fill="#2563EB" font-weight="600">📍 Location:</text><text x="120" fill="#0F172A">Mumbai, India <tspan fill="#475569">(Open to Remote &amp; Relocation)</tspan></text></g>
+        <g transform="translate(0, 26)"><text fill="#06B6D4" font-weight="600">🎓 Education:</text><text x="120" fill="#0F172A">B.E. Information Technology <tspan fill="#475569">(Mumbai Univ, 2024)</tspan></text></g>
+        <g transform="translate(0, 52)"><text fill="#10B981" font-weight="600">🚀 Core Focus:</text><text x="120" fill="#0F172A">High-Throughput Backends, LLM Agents, WebSockets</text></g>
+        <g transform="translate(0, 78)"><text fill="#F59E0B" font-weight="600">🌐 Portfolio:</text><text x="120" fill="#06B6D4" text-decoration="underline">himanshu-menghani.vercel.app</text></g>
+        <g transform="translate(0, 104)"><text fill="#EC4899" font-weight="600">✉️ Contact:</text><text x="120" fill="#0F172A">himanshumenghani524@gmail.com</text></g>
       </g>
-
-      <!-- Tech Stack Pills Section -->
       <g transform="translate(0, 220)">
         <text y="0" font-size="12" font-weight="600" class="font-mono" fill="#475569" letter-spacing="1">PRIMARY TECH STACK &amp; FRAMEWORKS</text>
-
-        <!-- Row 1 Pills -->
         <g transform="translate(0, 15)">
-          <rect x="0" y="0" width="75" height="28" rx="14" fill="#E2E8F0" stroke="rgba(37,99,235,0.3)" stroke-width="1" class="pill" />
+          <rect x="0" y="0" width="75" height="28" rx="14" fill="#E2E8F0" stroke="rgba(34,211,238,0.3)" stroke-width="1" class="pill" />
           <text x="37.5" y="18" font-size="11.5" class="font-mono" fill="#0F172A" text-anchor="middle">Next.js</text>
-
-          <rect x="85" y="0" width="75" height="28" rx="14" fill="#E2E8F0" stroke="rgba(37,99,235,0.3)" stroke-width="1" class="pill" />
-          <text x="122.5" y="18" font-size="11.5" class="font-mono" fill="#2563EB" text-anchor="middle">FastAPI</text>
-
-          <rect x="170" y="0" width="70" height="28" rx="14" fill="#E2E8F0" stroke="rgba(16,185,129,0.3)" stroke-width="1" class="pill" />
-          <text x="205" y="18" font-size="11.5" class="font-mono" fill="#0F172A" text-anchor="middle">Python</text>
-
-          <rect x="250" y="0" width="65" height="28" rx="14" fill="#E2E8F0" stroke="rgba(6,182,212,0.3)" stroke-width="1" class="pill" />
+          <rect x="85" y="0" width="75" height="28" rx="14" fill="#E2E8F0" stroke="rgba(34,211,238,0.3)" stroke-width="1" class="pill" />
+          <text x="122.5" y="18" font-size="11.5" class="font-mono" fill="#06B6D4" text-anchor="middle">FastAPI</text>
+          <rect x="170" y="0" width="70" height="28" rx="14" fill="#E2E8F0" stroke="rgba(34,211,238,0.3)" stroke-width="1" class="pill" />
+          <text x="205.0" y="18" font-size="11.5" class="font-mono" fill="#0F172A" text-anchor="middle">Python</text>
+          <rect x="250" y="0" width="65" height="28" rx="14" fill="#E2E8F0" stroke="rgba(34,211,238,0.3)" stroke-width="1" class="pill" />
           <text x="282.5" y="18" font-size="11.5" class="font-mono" fill="#0F172A" text-anchor="middle">React</text>
-
-          <rect x="325" y="0" width="100" height="28" rx="14" fill="#E2E8F0" stroke="rgba(37,99,235,0.3)" stroke-width="1" class="pill" />
-          <text x="375" y="18" font-size="11.5" class="font-mono" fill="#0F172A" text-anchor="middle">PostgreSQL</text>
-
-          <rect x="435" y="0" width="60" height="28" rx="14" fill="#E2E8F0" stroke="rgba(239,68,68,0.3)" stroke-width="1" class="pill" />
-          <text x="465" y="18" font-size="11.5" class="font-mono" fill="#0F172A" text-anchor="middle">Redis</text>
+          <rect x="325" y="0" width="100" height="28" rx="14" fill="#E2E8F0" stroke="rgba(34,211,238,0.3)" stroke-width="1" class="pill" />
+          <text x="375.0" y="18" font-size="11.5" class="font-mono" fill="#0F172A" text-anchor="middle">PostgreSQL</text>
+          <rect x="435" y="0" width="60" height="28" rx="14" fill="#E2E8F0" stroke="rgba(34,211,238,0.3)" stroke-width="1" class="pill" />
+          <text x="465.0" y="18" font-size="11.5" class="font-mono" fill="#0F172A" text-anchor="middle">Redis</text>
         </g>
-
-        <!-- Row 2 Pills -->
         <g transform="translate(0, 50)">
-          <rect x="0" y="0" width="100" height="28" rx="14" fill="#E2E8F0" stroke="rgba(16,185,129,0.3)" stroke-width="1" class="pill" />
-          <text x="50" y="18" font-size="11.5" class="font-mono" fill="#10B981" text-anchor="middle">WebSockets</text>
-
-          <rect x="110" y="0" width="70" height="28" rx="14" fill="#E2E8F0" stroke="rgba(37,99,235,0.3)" stroke-width="1" class="pill" />
-          <text x="145" y="18" font-size="11.5" class="font-mono" fill="#0F172A" text-anchor="middle">Docker</text>
-
-          <rect x="190" y="0" width="95" height="28" rx="14" fill="#E2E8F0" stroke="rgba(245,158,11,0.3)" stroke-width="1" class="pill" />
-          <text x="237.5" y="18" font-size="11.5" class="font-mono" fill="#D97706" text-anchor="middle">Gemini API</text>
-
-          <rect x="295" y="0" width="100" height="28" rx="14" fill="#E2E8F0" stroke="rgba(236,72,153,0.3)" stroke-width="1" class="pill" />
-          <text x="345" y="18" font-size="11.5" class="font-mono" fill="#DB2777" text-anchor="middle">Presidio PII</text>
-
-          <rect x="405" y="0" width="95" height="28" rx="14" fill="#E2E8F0" stroke="rgba(37,99,235,0.3)" stroke-width="1" class="pill" />
+          <rect x="0" y="0" width="100" height="28" rx="14" fill="#E2E8F0" stroke="rgba(34,211,238,0.3)" stroke-width="1" class="pill" />
+          <text x="50.0" y="18" font-size="11.5" class="font-mono" fill="#10B981" text-anchor="middle">WebSockets</text>
+          <rect x="110" y="0" width="70" height="28" rx="14" fill="#E2E8F0" stroke="rgba(34,211,238,0.3)" stroke-width="1" class="pill" />
+          <text x="145.0" y="18" font-size="11.5" class="font-mono" fill="#0F172A" text-anchor="middle">Docker</text>
+          <rect x="190" y="0" width="95" height="28" rx="14" fill="#E2E8F0" stroke="rgba(34,211,238,0.3)" stroke-width="1" class="pill" />
+          <text x="237.5" y="18" font-size="11.5" class="font-mono" fill="#F59E0B" text-anchor="middle">Gemini API</text>
+          <rect x="295" y="0" width="100" height="28" rx="14" fill="#E2E8F0" stroke="rgba(34,211,238,0.3)" stroke-width="1" class="pill" />
+          <text x="345.0" y="18" font-size="11.5" class="font-mono" fill="#EC4899" text-anchor="middle">Presidio PII</text>
+          <rect x="405" y="0" width="95" height="28" rx="14" fill="#E2E8F0" stroke="rgba(34,211,238,0.3)" stroke-width="1" class="pill" />
           <text x="452.5" y="18" font-size="11.5" class="font-mono" fill="#2563EB" text-anchor="middle">AST Tracer</text>
         </g>
       </g>
-
-      <!-- Featured Shipped Products Badges (Clean Spacing) -->
       <g transform="translate(0, 345)">
         <text y="0" font-size="12" font-weight="600" class="font-mono" fill="#475569" letter-spacing="1">FEATURED SHIPPED PRODUCTS</text>
-        
         <g transform="translate(0, 16)">
-          <!-- CodeMate Badge -->
-          <rect x="0" y="0" width="180" height="34" rx="8" fill="#E2E8F0" stroke="rgba(37,99,235,0.4)" stroke-width="1" />
-          <text x="12" y="22" font-size="12" class="font-mono" fill="#2563EB">⚡ CodeMate OS</text>
+          <rect x="0" y="0" width="180" height="34" rx="8" fill="#E2E8F0" stroke="rgba(34,211,238,0.4)" stroke-width="1" />
+          <text x="12" y="22" font-size="12" class="font-mono" fill="#06B6D4">⚡ CodeMate OS</text>
           <text x="168" y="22" font-size="11" class="font-mono" fill="#475569" text-anchor="end">Live ↗</text>
-
-          <!-- DrishtiAI Badge -->
           <rect x="195" y="0" width="195" height="34" rx="8" fill="#E2E8F0" stroke="rgba(16,185,129,0.4)" stroke-width="1" />
           <text x="207" y="22" font-size="12" class="font-mono" fill="#10B981">🛡️ DrishtiAI</text>
           <text x="378" y="22" font-size="11" class="font-mono" fill="#475569" text-anchor="end">Top 10 ↗</text>
-
-          <!-- RecruitIQ Badge -->
-          <rect x="405" y="0" width="185" height="34" rx="8" fill="#E2E8F0" stroke="rgba(37,99,235,0.4)" stroke-width="1" />
+          <rect x="405" y="0" width="185" height="34" rx="8" fill="#E2E8F0" stroke="rgba(124,58,237,0.4)" stroke-width="1" />
           <text x="417" y="22" font-size="12" class="font-mono" fill="#2563EB">🎯 RecruitIQ</text>
           <text x="578" y="22" font-size="11" class="font-mono" fill="#475569" text-anchor="end">Live ↗</text>
         </g>
