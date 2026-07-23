@@ -7,7 +7,7 @@
 <br>
 
 <div align="center">
-  <img alt="Himanshu's Live GitHub Contribution Heatmap" src="contrib-heatmap.svg?v=6" width="100%">
+  <img alt="Himanshu's Live GitHub Contribution Heatmap" src="contrib-heatmap.svg?v=7" width="100%">
 </div>
 
 <br>

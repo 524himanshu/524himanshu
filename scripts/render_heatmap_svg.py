@@ -20,11 +20,10 @@ def render_heatmap_svg(json_path=r"C:\Users\asus\Desktop\hm\524himanshu\data\con
     PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
 
     # Calculate grid layout
-    # 53 weeks x 7 days
     box_size = 11
     box_gap = 3
-    start_x = 40
-    start_y = 55
+    start_x = 45
+    start_y = 65
 
     weeks = []
     current_week = []
@@ -49,7 +48,7 @@ def render_heatmap_svg(json_path=r"C:\Users\asus\Desktop\hm\524himanshu\data\con
 
     # Generate SVG Content
     svg = []
-    svg.append('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 210" width="860" height="210">')
+    svg.append('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 220" width="860" height="220">')
     svg.append('  <defs>')
     svg.append('    <linearGradient id="bg-grad-heat" x1="0%" y1="0%" x2="100%" y2="100%">')
     svg.append('      <stop offset="0%" stop-color="#0D1117" />')
@@ -66,18 +65,18 @@ def render_heatmap_svg(json_path=r"C:\Users\asus\Desktop\hm\524himanshu\data\con
     svg.append('  </style>')
 
     # Background Card
-    svg.append('  <rect width="860" height="210" rx="16" fill="url(#bg-grad-heat)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" filter="url(#shadow-heat)" />')
+    svg.append('  <rect width="860" height="220" rx="16" fill="url(#bg-grad-heat)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" filter="url(#shadow-heat)" />')
 
-    # Header Bar
+    # Header Bar (Top)
     svg.append('  <g transform="translate(24, 28)" class="font-sans">')
     svg.append(f'    <text font-size="14" font-weight="700" fill="#F8FAFC">📊 GitHub Contribution Activity <tspan fill="#39D353">(@{username})</tspan></text>')
     svg.append('  </g>')
 
-    # Month Labels Row
+    # Month Labels Row (Spaced cleanly below header)
     svg.append('  <g transform="translate(0, 0)" class="font-mono" font-size="10" fill="#8B949E">')
     for w_idx, label in month_labels:
         x_pos = start_x + (w_idx * (box_size + box_gap))
-        svg.append(f'    <text x="{x_pos}" y="{start_y - 8}">{label}</text>')
+        svg.append(f'    <text x="{x_pos}" y="{start_y - 10}">{label}</text>')
     svg.append('  </g>')
 
     # Day Labels Column
@@ -86,7 +85,7 @@ def render_heatmap_svg(json_path=r"C:\Users\asus\Desktop\hm\524himanshu\data\con
     svg.append('  <g class="font-mono" font-size="9" fill="#8B949E">')
     for d_idx, d_name in zip(day_indices, day_names):
         y_pos = start_y + (d_idx * (box_size + box_gap)) + 9
-        svg.append(f'    <text x="15" y="{y_pos}">{d_name}</text>')
+        svg.append(f'    <text x="16" y="{y_pos}">{d_name}</text>')
     svg.append('  </g>')
 
     # Grid Rectangles
@@ -100,15 +99,15 @@ def render_heatmap_svg(json_path=r"C:\Users\asus\Desktop\hm\524himanshu\data\con
             date_str = day_data["date"]
             cnt = day_data["count"]
 
-            delay = (w_idx * 0.03) + (d_idx * 0.01)
+            delay = (w_idx * 0.02) + (d_idx * 0.008)
             svg.append(f'    <rect x="{x}" y="{y}" width="{box_size}" height="{box_size}" rx="2" fill="{color}">')
             svg.append(f'      <title>{cnt} contributions on {date_str}</title>')
-            svg.append(f'      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="{delay:.2f}s" fill="freeze" />')
+            svg.append(f'      <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="{delay:.2f}s" fill="freeze" />')
             svg.append('    </rect>')
     svg.append('  </g>')
 
     # Footer & Legend
-    svg.append('  <g transform="translate(24, 188)" class="font-mono" font-size="11">')
+    svg.append('  <g transform="translate(24, 198)" class="font-mono" font-size="11">')
     svg.append(f'    <text fill="#8B949E"><tspan fill="#39D353" font-weight="700">{total:,}</tspan> contributions in the last year • <tspan fill="#58A6FF">Streak: {streak}d</tspan> • <tspan fill="#D2A8FF">Longest: {longest}d</tspan></text>')
 
     # Legend
@@ -126,7 +125,7 @@ def render_heatmap_svg(json_path=r"C:\Users\asus\Desktop\hm\524himanshu\data\con
     with open(output_svg, "w", encoding="utf-8") as f:
         f.write("\n".join(svg))
 
-    print(f"Successfully generated heatmap SVG at {output_svg}")
+    print(f"Successfully re-rendered heatmap SVG at {output_svg}")
 
 if __name__ == "__main__":
     render_heatmap_svg()
