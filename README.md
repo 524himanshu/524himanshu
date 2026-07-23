@@ -1,19 +1,11 @@
 <picture>
-<<<<<<< HEAD
-  <source media="(prefers-color-scheme: dark)" srcset="dark.svg?v=3">
-  <source media="(prefers-color-scheme: light)" srcset="light.svg?v=3">
-  <img alt="Himanshu Menghani - Full Stack Developer &amp; AI Engineer" src="dark.svg?v=3" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="dark.svg?v=5">
+  <source media="(prefers-color-scheme: light)" srcset="light.svg?v=5">
+  <img alt="Himanshu Menghani - Full Stack Developer &amp; AI Engineer" src="dark.svg?v=5" width="100%">
 </picture>
 
 <br>
 
-=======
-  <source media="(prefers-color-scheme: dark)" srcset="dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="light.svg">
-  <img alt="Himanshu Menghani - Full Stack Developer & AI Engineer" src="dark.svg" width="100%">
-</picture>
-
->>>>>>> 401a592c448be6a89e36f16cba6ef8185ff5b8df
 ```java
 class HimanshuMenghani {
 
