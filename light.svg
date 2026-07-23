@@ -43,7 +43,6 @@
     .cursor { animation: blink 1s step-end infinite; }
     .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
     .font-mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
-    .font-code { font-family: Consolas, "Courier New", Courier, monospace; font-variant-ligatures: none; }
     .pill { transition: all 0.3s ease; }
     .pill:hover { fill: #2563EB; }
   </style>
@@ -56,47 +55,42 @@
     <circle cx="24" cy="24" r="6" fill="#EF4444" opacity="0.8" />
     <circle cx="44" cy="24" r="6" fill="#F59E0B" opacity="0.8" />
     <circle cx="64" cy="24" r="6" fill="#10B981" opacity="0.8" />
-    <text x="200" y="28" font-size="12" class="font-mono" fill="#475569" text-anchor="middle" opacity="0.7">himanshu@portrait:~$ ./ascii_art</text>
+    <text x="200" y="28" font-size="12" class="font-mono" fill="#475569" text-anchor="middle" opacity="0.7">himanshu@builder:~$ ./whoami</text>
     <line x1="1" y1="45" x2="399" y2="45" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-    <g transform="translate(14, 58)" class="font-code" fill="url(#ascii-grad)">
-      <clipPath id="ascii-clip">
-        <rect x="0" y="0" width="372" height="340">
-          <animate attributeName="height" from="0" to="340" dur="2.2s" fill="freeze" />
-        </rect>
-      </clipPath>
-      <g clip-path="url(#ascii-clip)">
-        <text y="12" font-size="11" letter-spacing="2.2px" xml:space="preserve">           ...::::::::::::::::::.:              </text>
-        <text y="26.5" font-size="11" letter-spacing="2.2px" xml:space="preserve">           ::::::::::::------:::::              </text>
-        <text y="41.0" font-size="11" letter-spacing="2.2px" xml:space="preserve">           =---------------------.              </text>
-        <text y="55.5" font-size="11" letter-spacing="2.2px" xml:space="preserve">           ===============------:.              </text>
-        <text y="70.0" font-size="11" letter-spacing="2.2px" xml:space="preserve">           ................::::::.-             </text>
-        <text y="84.5" font-size="11" letter-spacing="2.2px" xml:space="preserve">           .     ..... ......:::.+*             </text>
-        <text y="99.0" font-size="11" letter-spacing="2.2px" xml:space="preserve">           . ........::::-------=%*             </text>
-        <text y="113.5" font-size="11" letter-spacing="2.2px" xml:space="preserve">           ----------=+++*****sss#*             </text>
-        <text y="128.0" font-size="11" letter-spacing="2.2px" xml:space="preserve">           -:::::::-:-++++****ss*#*             </text>
-        <text y="142.5" font-size="11" letter-spacing="2.2px" xml:space="preserve">                   . :++++****ss*#*             </text>
-        <text y="157.0" font-size="11" letter-spacing="2.2px" xml:space="preserve">                     .*+++****ss*#*             </text>
-        <text y="171.5" font-size="11" letter-spacing="2.2px" xml:space="preserve">                     .*+++****ss*ss.            </text>
-        <text y="186.0" font-size="11" letter-spacing="2.2px" xml:space="preserve">                     :####s***sssss.            </text>
-        <text y="200.5" font-size="11" letter-spacing="2.2px" xml:space="preserve">           ..        :#+-=s**ssssss.            </text>
-        <text y="215.0" font-size="11" letter-spacing="2.2px" xml:space="preserve">           :....     .:.  -***ssss#:.           </text>
-        <text y="229.5" font-size="11" letter-spacing="2.2px" xml:space="preserve">           -::::..-==+s=--:*ssssss#-.           </text>
-        <text y="244.0" font-size="11" letter-spacing="2.2px" xml:space="preserve">           -----:=*:+@@#s*:*%######=:           </text>
-        <text y="258.5" font-size="11" letter-spacing="2.2px" xml:space="preserve">           ====-=%s*%%%%@@s-s%####%=:           </text>
-        <text y="273.0" font-size="11" letter-spacing="2.2px" xml:space="preserve">          .+===-+###%%%%%@%s#%####%+-           </text>
-        <text y="287.5" font-size="11" letter-spacing="2.2px" xml:space="preserve">          .*++++===*@%%%%%@@%%%%##%*-           </text>
-        <text y="302.0" font-size="11" letter-spacing="2.2px" xml:space="preserve">          :%####sss#%%@%%%%%%%%%%#%*=           </text>
-        <text y="316.5" font-size="11" letter-spacing="2.2px" xml:space="preserve">          :#s#####s#%%%@%@@@%s****%s-           </text>
+    <g transform="translate(20, 65)">
+      <g fill="url(#ascii-grad)">
+        <text y="20" font-size="22" class="font-mono" font-weight="900" letter-spacing="3">H I M A N S H U</text>
+        <text y="38" font-size="12" class="font-mono" fill="#06B6D4" font-weight="700" letter-spacing="4">M E N G H A N I</text>
       </g>
-    </g>
-    <g transform="translate(14, 385)" class="font-mono">
-      <rect width="372" height="115" rx="10" fill="#E2E8F0" stroke="rgba(34,211,238,0.2)" stroke-width="1" />
-      <text x="14" y="22" font-size="11" fill="#2563EB" font-weight="700">⚡ SYSTEM SPECS &amp; CAPABILITIES</text>
-      <line x1="14" y1="30" x2="358" y2="30" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-      <text x="14" y="48" font-size="10.5" fill="#0F172A">• Photo ASCII: Avatar Generated</text>
-      <text x="14" y="66" font-size="10.5" fill="#0F172A">• Python AST Tracer &amp; Presidio PII</text>
-      <text x="14" y="84" font-size="10.5" fill="#10B981" font-weight="600">[✓] WebSockets &lt;50ms: PASS</text>
-      <text x="14" y="102" font-size="10.5" fill="#06B6D4" font-weight="600">&gt; Status: Open for Work <tspan class="cursor" fill="#06B6D4">█</tspan></text>
+      <g transform="translate(0, 50)">
+        <rect width="360" height="155" rx="12" fill="#E2E8F0" stroke="rgba(34,211,238,0.2)" stroke-width="1" />
+        <g transform="translate(20, 15)">
+          <circle cx="50" cy="40" r="24" fill="none" stroke="url(#ascii-grad)" stroke-width="2.5" />
+          <path d="M 15 110 C 15 70, 85 70, 85 110" fill="none" stroke="url(#ascii-grad)" stroke-width="2.5" />
+          <path d="M 32 38 L 42 38 M 58 38 L 68 38" stroke="#06B6D4" stroke-width="3" stroke-linecap="round" />
+          <line x1="42" y1="38" x2="58" y2="38" stroke="#06B6D4" stroke-width="1.5" />
+        </g>
+        <g transform="translate(130, 25)" class="font-mono" font-size="11">
+          <text y="10" fill="#2563EB" font-weight="700">⚡ SYSTEM ARCHITECT</text>
+          <line x1="0" y1="18" x2="215" y2="18" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+          <text y="38" fill="#0F172A">• FastAPI + Next.js Stack</text>
+          <text y="58" fill="#0F172A">• Python AST Tracer &amp; PII</text>
+          <text y="78" fill="#0F172A">• WebSockets &lt;50ms Latency</text>
+          <text y="98" fill="#06B6D4" font-weight="600">» Flagship: CodeMate OS</text>
+        </g>
+      </g>
+      <g transform="translate(0, 230)" class="font-mono" font-size="11">
+        <text y="0" fill="#10B981" font-weight="700">[✓] STATUS: OPEN FOR ROLES &amp; RELOCATION</text>
+        <text y="24" fill="#06B6D4" font-weight="700">[✓] CODEBASE: 4+ PRODUCTION PRODUCTS</text>
+        <text y="48" fill="#2563EB" font-weight="700">[✓] HACKATHON: AI FOR BHARAT 2026 TOP 10</text>
+      </g>
+      <g transform="translate(0, 325)" class="font-mono" font-size="11">
+        <text y="0" fill="#0F172A" font-weight="700">&gt; executing system check...</text>
+        <text y="22" fill="#475569">  - WebSockets Sync: <tspan fill="#10B981" font-weight="700">PASS (&lt;50ms)</tspan></text>
+        <text y="42" fill="#475569">  - PII Shield Engine: <tspan fill="#10B981" font-weight="700">PASS (&lt;15ms)</tspan></text>
+        <text y="62" fill="#475569">  - Compiler Sandbox: <tspan fill="#06B6D4" font-weight="700">SECURE</tspan></text>
+        <text y="98" fill="#06B6D4" font-weight="700">&gt; Ready for impact<tspan class="cursor" fill="#06B6D4">█</tspan></text>
+      </g>
     </g>
   </g>
   <g transform="translate(480, 45)">
