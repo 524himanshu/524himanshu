@@ -29,7 +29,7 @@
 
     <linearGradient id="border-shimmer-light" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="rgba(15,23,42,0.05)" />
-      <stop offset="50%" stop-color="rgba(37,99,235,0.3)" />
+      <stop offset="50%" stop-color="rgba(37,99,235,0.4)" />
       <stop offset="100%" stop-color="rgba(15,23,42,0.05)" />
       <animateTransform attributeName="gradientTransform" type="translate" from="-1180 0" to="1180 0" dur="6s" repeatCount="indefinite" />
     </linearGradient>
@@ -54,7 +54,7 @@
   <style>
     @keyframes float {
       0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-8px); }
+      50% { transform: translateY(-7px); }
     }
     @keyframes pulseGlow {
       0%, 100% { opacity: 0.4; }
@@ -68,9 +68,8 @@
     .bg-animate { animation: pulseGlow 6s ease-in-out indefinite alternate; }
     .floating-box { animation: float 6s ease-in-out infinite; }
     .cursor { animation: blink 1s step-end infinite; }
-    .text-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; font-weight: 700; fill: #0F172A; }
-    .text-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace; fill: #475569; }
-    .text-accent { fill: #2563EB; font-weight: 600; }
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .font-mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
     .pill { transition: all 0.3s ease; }
     .pill:hover { fill: #2563EB; }
   </style>
@@ -79,8 +78,8 @@
   <rect width="1180" height="610" rx="24" fill="url(#bg-grad-light)" />
 
   <!-- Background Animated Glowing Ambient Orbs -->
-  <circle cx="200" cy="150" r="300" fill="url(#orb-blue-light)" class="bg-animate" />
-  <circle cx="950" cy="450" r="350" fill="url(#orb-cyan-light)" class="bg-animate" />
+  <circle cx="200" cy="150" r="320" fill="url(#orb-blue-light)" class="bg-animate" />
+  <circle cx="950" cy="450" r="360" fill="url(#orb-cyan-light)" class="bg-animate" />
 
   <!-- Grid Pattern Overlay -->
   <g opacity="0.06" stroke="#0F172A" stroke-width="1">
@@ -104,100 +103,97 @@
   <!-- ========================================== -->
   <g transform="translate(45, 45)" class="floating-box">
     <!-- ASCII Card Container -->
-    <rect width="400" height="520" rx="16" fill="#F1F5F9" fill-opacity="0.9" stroke="rgba(37,99,235,0.2)" stroke-width="1.5" />
+    <rect width="400" height="520" rx="16" fill="#F1F5F9" fill-opacity="0.9" stroke="rgba(37,99,235,0.25)" stroke-width="1.5" />
 
     <!-- Terminal Header Buttons -->
     <circle cx="24" cy="24" r="6" fill="#EF4444" opacity="0.8" />
     <circle cx="44" cy="24" r="6" fill="#F59E0B" opacity="0.8" />
     <circle cx="64" cy="24" r="6" fill="#10B981" opacity="0.8" />
-    <text x="200" y="28" font-size="12" class="text-mono" text-anchor="middle" opacity="0.6">himanshu@builder:~$ ./portrait</text>
+    <text x="200" y="28" font-size="12" class="font-mono" fill="#475569" text-anchor="middle" opacity="0.7">himanshu@builder:~$ ./portrait</text>
 
     <!-- Line Divider -->
     <line x1="1" y1="45" x2="399" y2="45" stroke="rgba(15,23,42,0.08)" stroke-width="1" />
 
-    <!-- Animated ASCII Art Text -->
-    <g transform="translate(20, 65)" font-size="9.5" class="text-mono" fill="url(#ascii-grad-light)">
-      <!-- Typing Reveal Effect via ClipPath -->
-      <clipPath id="ascii-clip-light">
-        <rect x="0" y="0" width="360" height="430">
-          <animate attributeName="height" from="0" to="430" dur="2.5s" fill="freeze" />
-        </rect>
-      </clipPath>
+    <!-- Clean Vector & ASCII Block Section -->
+    <g transform="translate(20, 65)">
+      <!-- Animated Title Banner -->
+      <g fill="url(#ascii-grad-light)">
+        <text y="20" font-size="22" class="font-mono" font-weight="800" letter-spacing="3">H I M A N S H U</text>
+        <text y="38" font-size="12" class="font-mono" fill="#2563EB" letter-spacing="4">M E N G H A N I</text>
+      </g>
 
-      <g clip-path="url(#ascii-clip-light)">
-        <text y="15">   ██╗██╗  ██╗███╗   ███╗██╗███╗   ██╗███╗   ██╗</text>
-        <text y="28">   ██║██║  ██║████╗ ████║██║████╗  ██║████╗  ██║</text>
-        <text y="41">   ██║███████║██╔████╔██║██║██╔██╗ ██║██╔██╗ ██║</text>
-        <text y="54">   ██║██╔══██║██║╚██╔╝██║██║██║╚██╗██║██║╚██╗██║</text>
-        <text y="67">   ██║██║  ██║██║ ╚═╝ ██║██║██║ ╚████║██║ ╚████║</text>
-        <text y="80">   ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═══╝</text>
+      <!-- Cyber Terminal Box -->
+      <g transform="translate(0, 55)" class="font-mono" font-size="11">
+        <!-- Box Outline -->
+        <rect width="360" height="150" rx="10" fill="#E2E8F0" stroke="rgba(37,99,235,0.2)" stroke-width="1" />
         
-        <!-- Cyber Avatar Wireframe representation -->
-        <text y="105" opacity="0.7">          .─────────────────────────.</text>
-        <text y="118" opacity="0.8">         /   Full-Stack &amp; AI Eng   \</text>
-        <text y="131" opacity="0.9">        |   ____________________   |</text>
-        <text y="144">        |  |  FastAPI + Next.js |  |</text>
-        <text y="157">        |  |  Python AST Tracer |  |</text>
-        <text y="170">        |  |  Presidio PII Shield| |</text>
-        <text y="183">        |  |____________________|  |</text>
-        <text y="196" opacity="0.9">        |                          |</text>
-        <text y="209" opacity="0.8">         \   DrishtiAI | CodeMate  /</text>
-        <text y="222" opacity="0.7">          '─────────────────────────'</text>
+        <text x="15" y="25" fill="#2563EB" font-weight="700">⚡ SYSTEM CAPABILITIES</text>
+        <line x1="15" y1="34" x2="345" y2="34" stroke="rgba(15,23,42,0.08)" stroke-width="1" />
 
-        <!-- Status Metrics inside Cyber Box -->
-        <text y="255" fill="#10B981"> [✓] STATUS: OPEN FOR ROLES &amp; RELOCATION</text>
-        <text y="272" fill="#2563EB"> [✓] CODEBASE: 4+ PRODUCTION PROJECTS</text>
-        <text y="289" fill="#06B6D4"> [✓] HACKATHON: AI FOR BHARAT 2026 FINALIST</text>
-        
-        <!-- Interactive Terminal Input -->
-        <text y="325" fill="#0F172A">&gt; executing system check...</text>
-        <text y="342" fill="#475569">  - WebSockets &lt;50ms: PASS</text>
-        <text y="359" fill="#475569">  - PII Redaction &lt;15ms: PASS</text>
-        <text y="376" fill="#475569">  - Compiler Sandbox: SECURE</text>
-        
-        <text y="410" fill="#2563EB">&gt; Ready for impact<tspan class="cursor" fill="#2563EB">█</tspan></text>
+        <text x="15" y="55" fill="#0F172A">• FastAPI + Next.js Stack</text>
+        <text x="15" y="75" fill="#0F172A">• Python sys.settrace AST Tracer</text>
+        <text x="15" y="95" fill="#0F172A">• Presidio PII Redaction Shield</text>
+        <text x="15" y="115" fill="#0F172A">• WebSockets &lt;50ms Synchronization</text>
+        <text x="15" y="135" fill="#2563EB" font-weight="600">» Flagship: DrishtiAI | CodeMate</text>
+      </g>
+
+      <!-- Status Metrics List -->
+      <g transform="translate(0, 230)" class="font-mono" font-size="11">
+        <text y="0" fill="#10B981" font-weight="600">[✓] STATUS: OPEN FOR ROLES &amp; RELOCATION</text>
+        <text y="22" fill="#2563EB" font-weight="600">[✓] CODEBASE: 4+ PRODUCTION PROJECTS</text>
+        <text y="44" fill="#06B6D4" font-weight="600">[✓] HACKATHON: AI FOR BHARAT 2026 FINALIST</text>
+      </g>
+
+      <!-- Interactive System Check Output -->
+      <g transform="translate(0, 310)" class="font-mono" font-size="11">
+        <text y="0" fill="#0F172A" font-weight="600">&gt; executing system check...</text>
+        <text y="20" fill="#475569">  - WebSockets &lt;50ms: <tspan fill="#10B981">PASS</tspan></text>
+        <text y="38" fill="#475569">  - PII Redaction &lt;15ms: <tspan fill="#10B981">PASS</tspan></text>
+        <text y="56" fill="#475569">  - Compiler Sandbox: <tspan fill="#2563EB">SECURE</tspan></text>
+
+        <text y="90" fill="#2563EB" font-weight="600">&gt; Ready for impact<tspan class="cursor" fill="#2563EB">█</tspan></text>
       </g>
     </g>
   </g>
 
   <!-- ========================================== -->
-  <!-- RIGHT SIDE: TERMINAL UI & INTERACTIVE DETAILS (62%) -->
+  <!-- RIGHT SIDE: TERMINAL UI & DETAILS (62%) -->
   <!-- ========================================== -->
   <g transform="translate(480, 45)">
     <!-- Right Window Terminal Bar -->
-    <rect width="650" height="520" rx="16" fill="#F8FAFC" fill-opacity="0.9" stroke="rgba(15,23,42,0.08)" stroke-width="1.5" />
+    <rect width="650" height="520" rx="16" fill="#F8FAFC" fill-opacity="0.95" stroke="rgba(15,23,42,0.08)" stroke-width="1.5" />
     
     <!-- Window Bar Controls -->
     <circle cx="24" cy="24" r="6" fill="#EF4444" opacity="0.8" />
     <circle cx="44" cy="24" r="6" fill="#F59E0B" opacity="0.8" />
     <circle cx="64" cy="24" r="6" fill="#10B981" opacity="0.8" />
-    <text x="325" y="28" font-size="12" class="text-mono" text-anchor="middle" opacity="0.6">himanshu_menghani.config.json</text>
+    <text x="325" y="28" font-size="12" class="font-mono" fill="#475569" text-anchor="middle" opacity="0.7">himanshu_menghani.config.json</text>
     <line x1="1" y1="45" x2="649" y2="45" stroke="rgba(15,23,42,0.08)" stroke-width="1" />
 
     <!-- Content Group -->
     <g transform="translate(30, 75)">
       <!-- Greeting Header -->
-      <text y="0" font-size="28" class="text-title">Hi 👋 I'm <tspan fill="url(#accent-grad-light)">Himanshu Menghani</tspan></text>
+      <text y="0" font-size="28" class="font-sans" font-weight="700" fill="#0F172A">Hi 👋 I'm <tspan fill="url(#accent-grad-light)">Himanshu Menghani</tspan></text>
 
-      <!-- Animated Typing Role Sequence -->
-      <g transform="translate(0, 32)">
-        <text y="0" font-size="18" class="text-mono" fill="#2563EB">&gt; 
+      <!-- Fixed Typing Role Loop (Single line, no overlap) -->
+      <g transform="translate(0, 32)" class="font-mono" font-size="16">
+        <text y="0" fill="#2563EB">&gt; 
           <tspan font-weight="600">
-            <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.45;0.5;1" dur="12s" repeatCount="indefinite" />Full-Stack Developer &amp; AI Engineer
-          </tspan>
-          <tspan font-weight="600">
-            <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.48;0.52;0.95;0.98;1" dur="12s" repeatCount="indefinite" />FastAPI, Next.js &amp; RAG Systems Builder
+            <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.45;0.5;1" dur="10s" repeatCount="indefinite" />Full-Stack Developer &amp; AI Engineer
           </tspan>
         </text>
-        <!-- Cursor -->
-        <rect x="360" y="-14" width="9" height="18" fill="#2563EB" class="cursor" />
+        <text y="0" fill="#10B981">
+          <tspan font-weight="600" dx="18">
+            <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.5;0.55;1" dur="10s" repeatCount="indefinite" />FastAPI, Next.js &amp; RAG Specialist
+          </tspan>
+        </text>
       </g>
 
       <!-- Divider -->
       <line x1="0" y1="48" x2="590" y2="48" stroke="rgba(15,23,42,0.08)" stroke-width="1" />
 
       <!-- Sequential Key Details -->
-      <g transform="translate(0, 78)" font-size="14" class="text-mono">
+      <g transform="translate(0, 78)" font-size="13.5" class="font-mono">
         <g transform="translate(0, 0)">
           <text fill="#2563EB" font-weight="600">📍 Location:</text>
           <text x="120" fill="#0F172A">Mumbai, India <tspan fill="#475569">(Open to Remote &amp; Relocation)</tspan></text>
@@ -226,78 +222,67 @@
 
       <!-- Tech Stack Pills Section -->
       <g transform="translate(0, 220)">
-        <text y="0" font-size="13" font-weight="600" class="text-mono" fill="#475569" letter-spacing="1">PRIMARY TECH STACK &amp; FRAMEWORKS</text>
+        <text y="0" font-size="12" font-weight="600" class="font-mono" fill="#475569" letter-spacing="1">PRIMARY TECH STACK &amp; FRAMEWORKS</text>
 
         <!-- Row 1 Pills -->
         <g transform="translate(0, 15)">
-          <!-- Pill: Next.js -->
-          <rect x="0" y="0" width="85" height="28" rx="14" fill="#E2E8F0" stroke="rgba(37,99,235,0.3)" stroke-width="1" class="pill" />
-          <text x="42.5" y="18" font-size="12" class="text-mono" fill="#0F172A" text-anchor="middle">Next.js</text>
+          <rect x="0" y="0" width="75" height="28" rx="14" fill="#E2E8F0" stroke="rgba(37,99,235,0.3)" stroke-width="1" class="pill" />
+          <text x="37.5" y="18" font-size="11.5" class="font-mono" fill="#0F172A" text-anchor="middle">Next.js</text>
 
-          <!-- Pill: FastAPI -->
-          <rect x="95" y="0" width="80" height="28" rx="14" fill="#E2E8F0" stroke="rgba(37,99,235,0.3)" stroke-width="1" class="pill" />
-          <text x="135" y="18" font-size="12" class="text-mono" fill="#2563EB" text-anchor="middle">FastAPI</text>
+          <rect x="85" y="0" width="75" height="28" rx="14" fill="#E2E8F0" stroke="rgba(37,99,235,0.3)" stroke-width="1" class="pill" />
+          <text x="122.5" y="18" font-size="11.5" class="font-mono" fill="#2563EB" text-anchor="middle">FastAPI</text>
 
-          <!-- Pill: Python -->
-          <rect x="185" y="0" width="75" height="28" rx="14" fill="#E2E8F0" stroke="rgba(16,185,129,0.3)" stroke-width="1" class="pill" />
-          <text x="222.5" y="18" font-size="12" class="text-mono" fill="#0F172A" text-anchor="middle">Python</text>
+          <rect x="170" y="0" width="70" height="28" rx="14" fill="#E2E8F0" stroke="rgba(16,185,129,0.3)" stroke-width="1" class="pill" />
+          <text x="205" y="18" font-size="11.5" class="font-mono" fill="#0F172A" text-anchor="middle">Python</text>
 
-          <!-- Pill: React -->
-          <rect x="270" y="0" width="70" height="28" rx="14" fill="#E2E8F0" stroke="rgba(6,182,212,0.3)" stroke-width="1" class="pill" />
-          <text x="305" y="18" font-size="12" class="text-mono" fill="#0F172A" text-anchor="middle">React</text>
+          <rect x="250" y="0" width="65" height="28" rx="14" fill="#E2E8F0" stroke="rgba(6,182,212,0.3)" stroke-width="1" class="pill" />
+          <text x="282.5" y="18" font-size="11.5" class="font-mono" fill="#0F172A" text-anchor="middle">React</text>
 
-          <!-- Pill: PostgreSQL -->
-          <rect x="350" y="0" width="105" height="28" rx="14" fill="#E2E8F0" stroke="rgba(37,99,235,0.3)" stroke-width="1" class="pill" />
-          <text x="402.5" y="18" font-size="12" class="text-mono" fill="#0F172A" text-anchor="middle">PostgreSQL</text>
+          <rect x="325" y="0" width="100" height="28" rx="14" fill="#E2E8F0" stroke="rgba(37,99,235,0.3)" stroke-width="1" class="pill" />
+          <text x="375" y="18" font-size="11.5" class="font-mono" fill="#0F172A" text-anchor="middle">PostgreSQL</text>
 
-          <!-- Pill: Redis -->
-          <rect x="465" y="0" width="65" height="28" rx="14" fill="#E2E8F0" stroke="rgba(239,68,68,0.3)" stroke-width="1" class="pill" />
-          <text x="497.5" y="18" font-size="12" class="text-mono" fill="#0F172A" text-anchor="middle">Redis</text>
+          <rect x="435" y="0" width="60" height="28" rx="14" fill="#E2E8F0" stroke="rgba(239,68,68,0.3)" stroke-width="1" class="pill" />
+          <text x="465" y="18" font-size="11.5" class="font-mono" fill="#0F172A" text-anchor="middle">Redis</text>
         </g>
 
         <!-- Row 2 Pills -->
-        <g transform="translate(0, 52)">
-          <!-- Pill: WebSockets -->
-          <rect x="0" y="0" width="105" height="28" rx="14" fill="#E2E8F0" stroke="rgba(16,185,129,0.3)" stroke-width="1" class="pill" />
-          <text x="52.5" y="18" font-size="12" class="text-mono" fill="#10B981" text-anchor="middle">WebSockets</text>
+        <g transform="translate(0, 50)">
+          <rect x="0" y="0" width="100" height="28" rx="14" fill="#E2E8F0" stroke="rgba(16,185,129,0.3)" stroke-width="1" class="pill" />
+          <text x="50" y="18" font-size="11.5" class="font-mono" fill="#10B981" text-anchor="middle">WebSockets</text>
 
-          <!-- Pill: Docker -->
-          <rect x="115" y="0" width="75" height="28" rx="14" fill="#E2E8F0" stroke="rgba(37,99,235,0.3)" stroke-width="1" class="pill" />
-          <text x="152.5" y="18" font-size="12" class="text-mono" fill="#0F172A" text-anchor="middle">Docker</text>
+          <rect x="110" y="0" width="70" height="28" rx="14" fill="#E2E8F0" stroke="rgba(37,99,235,0.3)" stroke-width="1" class="pill" />
+          <text x="145" y="18" font-size="11.5" class="font-mono" fill="#0F172A" text-anchor="middle">Docker</text>
 
-          <!-- Pill: Gemini API -->
-          <rect x="200" y="0" width="100" height="28" rx="14" fill="#E2E8F0" stroke="rgba(245,158,11,0.3)" stroke-width="1" class="pill" />
-          <text x="250" y="18" font-size="12" class="text-mono" fill="#D97706" text-anchor="middle">Gemini API</text>
+          <rect x="190" y="0" width="95" height="28" rx="14" fill="#E2E8F0" stroke="rgba(245,158,11,0.3)" stroke-width="1" class="pill" />
+          <text x="237.5" y="18" font-size="11.5" class="font-mono" fill="#D97706" text-anchor="middle">Gemini API</text>
 
-          <!-- Pill: Presidio PII -->
-          <rect x="310" y="0" width="105" height="28" rx="14" fill="#E2E8F0" stroke="rgba(236,72,153,0.3)" stroke-width="1" class="pill" />
-          <text x="362.5" y="18" font-size="12" class="text-mono" fill="#DB2777" text-anchor="middle">Presidio PII</text>
+          <rect x="295" y="0" width="100" height="28" rx="14" fill="#E2E8F0" stroke="rgba(236,72,153,0.3)" stroke-width="1" class="pill" />
+          <text x="345" y="18" font-size="11.5" class="font-mono" fill="#DB2777" text-anchor="middle">Presidio PII</text>
 
-          <!-- Pill: AST Tracer -->
-          <rect x="425" y="0" width="105" height="28" rx="14" fill="#E2E8F0" stroke="rgba(37,99,235,0.3)" stroke-width="1" class="pill" />
-          <text x="477.5" y="18" font-size="12" class="text-mono" fill="#2563EB" text-anchor="middle">AST Tracer</text>
+          <rect x="405" y="0" width="95" height="28" rx="14" fill="#E2E8F0" stroke="rgba(37,99,235,0.3)" stroke-width="1" class="pill" />
+          <text x="452.5" y="18" font-size="11.5" class="font-mono" fill="#2563EB" text-anchor="middle">AST Tracer</text>
         </g>
       </g>
 
-      <!-- Social & Project Link Badges -->
+      <!-- Featured Shipped Products Badges (Clean Spacing) -->
       <g transform="translate(0, 345)">
-        <text y="0" font-size="13" font-weight="600" class="text-mono" fill="#475569" letter-spacing="1">FEATURED SHIPPED PRODUCTS</text>
+        <text y="0" font-size="12" font-weight="600" class="font-mono" fill="#475569" letter-spacing="1">FEATURED SHIPPED PRODUCTS</text>
         
-        <g transform="translate(0, 18)">
+        <g transform="translate(0, 16)">
           <!-- CodeMate Badge -->
-          <rect x="0" y="0" width="180" height="32" rx="8" fill="#E2E8F0" stroke="rgba(37,99,235,0.4)" stroke-width="1" />
-          <text x="12" y="21" font-size="13" class="text-mono" fill="#2563EB">⚡ CodeMate OS</text>
-          <text x="168" y="21" font-size="11" class="text-mono" fill="#475569" text-anchor="end">Live ↗</text>
+          <rect x="0" y="0" width="180" height="34" rx="8" fill="#E2E8F0" stroke="rgba(37,99,235,0.4)" stroke-width="1" />
+          <text x="12" y="22" font-size="12" class="font-mono" fill="#2563EB">⚡ CodeMate OS</text>
+          <text x="168" y="22" font-size="11" class="font-mono" fill="#475569" text-anchor="end">Live ↗</text>
 
           <!-- DrishtiAI Badge -->
-          <rect x="195" y="0" width="195" height="32" rx="8" fill="#E2E8F0" stroke="rgba(16,185,129,0.4)" stroke-width="1" />
-          <text x="207" y="21" font-size="13" class="text-mono" fill="#10B981">🛡️ DrishtiAI Engine</text>
-          <text x="378" y="21" font-size="11" class="text-mono" fill="#475569" text-anchor="end">Top 10 ↗</text>
+          <rect x="195" y="0" width="195" height="34" rx="8" fill="#E2E8F0" stroke="rgba(16,185,129,0.4)" stroke-width="1" />
+          <text x="207" y="22" font-size="12" class="font-mono" fill="#10B981">🛡️ DrishtiAI</text>
+          <text x="378" y="22" font-size="11" class="font-mono" fill="#475569" text-anchor="end">Top 10 ↗</text>
 
           <!-- RecruitIQ Badge -->
-          <rect x="405" y="0" width="185" height="32" rx="8" fill="#E2E8F0" stroke="rgba(37,99,235,0.4)" stroke-width="1" />
-          <text x="417" y="21" font-size="13" class="text-mono" fill="#2563EB">🎯 RecruitIQ 100k</text>
-          <text x="578" y="21" font-size="11" class="text-mono" fill="#475569" text-anchor="end">Live ↗</text>
+          <rect x="405" y="0" width="185" height="34" rx="8" fill="#E2E8F0" stroke="rgba(37,99,235,0.4)" stroke-width="1" />
+          <text x="417" y="22" font-size="12" class="font-mono" fill="#2563EB">🎯 RecruitIQ</text>
+          <text x="578" y="22" font-size="11" class="font-mono" fill="#475569" text-anchor="end">Live ↗</text>
         </g>
       </g>
     </g>
