@@ -1,3 +1,9 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="light.svg">
+  <img alt="Himanshu Menghani - Full Stack Developer & AI Engineer" src="dark.svg" width="100%">
+</picture>
+
 ```java
 class HimanshuMenghani {
 
