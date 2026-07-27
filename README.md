@@ -1,23 +1,22 @@
 <div align="center">
-  <img alt="Himanshu's Live GitHub Contribution Heatmap" src="contrib-heatmap.svg?v=12" width="100%">
+
+  <h3><code>himanshu@github ~ $ ./contributions.sh</code></h3>
+  <img src="./contrib-heatmap.svg?v=15" width="860" />
+
+  <br><br>
+
+  <h3><code>himanshu@github ~ $ whoami</code></h3>
+  <table>
+    <tr>
+      <td valign="top"><img src="./himanshu-ascii.svg?v=15" width="370" /></td>
+      <td valign="top"><img src="./info-card.svg?v=15" width="490" /></td>
+    </tr>
+  </table>
+
 </div>
 
 <br>
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="himanshu-ascii.svg?v=12">
-    <source media="(prefers-color-scheme: light)" srcset="himanshu-ascii.svg?v=12">
-    <img alt="Himanshu ASCII Portrait" src="himanshu-ascii.svg?v=12" width="38%" align="left">
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="info-card.svg?v=12">
-    <source media="(prefers-color-scheme: light)" srcset="info-card.svg?v=12">
-    <img alt="Himanshu Developer Config Info Card" src="info-card.svg?v=12" width="60%" align="right">
-  </picture>
-</div>
-
-<br clear="both">
 
 
 ```java
