@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import os
 import json
 import re
@@ -104,7 +103,6 @@ def fetch_github_contributions(username="524himanshu"):
 
 if __name__ == "__main__":
     fetch_github_contributions("524himanshu")
-=======
 #!/usr/bin/env python3
 """
 Scrape real daily contribution counts from GitHub's public, unauthenticated
@@ -124,7 +122,7 @@ import sys
 import requests
 from bs4 import BeautifulSoup
 
-USERNAME = os.environ.get("GH_PROFILE_USER", "AVIVASHISHTA29")
+USERNAME = os.environ.get("GH_PROFILE_USER", "524himanshu")
 URL = f"https://github.com/users/{USERNAME}/contributions"
 OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "contributions.json")
 
@@ -228,4 +226,4 @@ if __name__ == "__main__":
     print(f"wrote {OUT_PATH}: {data['total_contributions']} contributions, "
           f"current streak {data['current_streak']['length']}, "
           f"longest streak {data['longest_streak']['length']}")
->>>>>>> 9991a2c (Refactor code structure for improved readability and maintainability)
+
