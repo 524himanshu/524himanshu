@@ -1,19 +1,20 @@
 <div align="center">
 
   <h3><code>himanshu@github ~ $ ./contributions.sh</code></h3>
-  <img src="./contrib-heatmap.svg?v=15" width="860" />
+  <img src="./contrib-heatmap.svg?v=300" width="860" />
 
   <br><br>
 
   <h3><code>himanshu@github ~ $ whoami</code></h3>
   <table>
     <tr>
-      <td valign="top"><img src="./himanshu-ascii.svg?v=15" width="370" /></td>
-      <td valign="top"><img src="./info-card.svg?v=15" width="490" /></td>
+      <td valign="top"><img src="./himanshu-ascii.svg?v=300" width="370" /></td>
+      <td valign="top"><img src="./info-card.svg?v=300" width="490" /></td>
     </tr>
   </table>
 
 </div>
+
 
 <br>
 
