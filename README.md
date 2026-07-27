@@ -1,16 +1,24 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="dark.svg?v=200">
-  <source media="(prefers-color-scheme: light)" srcset="light.svg?v=200">
-  <img alt="Himanshu Menghani - Full Stack Developer &amp; AI Engineer" src="info-card.svg?v=200" width="100%">
-</picture>
+<div align="center">
+  <img alt="Himanshu's Live GitHub Contribution Heatmap" src="contrib-heatmap.svg?v=12" width="100%">
+</div>
 
 <br>
 
 <div align="center">
-  <img alt="Himanshu's Live GitHub Contribution Heatmap" src="contrib-heatmap.svg?v=7" width="100%">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="himanshu-ascii.svg?v=12">
+    <source media="(prefers-color-scheme: light)" srcset="himanshu-ascii.svg?v=12">
+    <img alt="Himanshu ASCII Portrait" src="himanshu-ascii.svg?v=12" width="38%" align="left">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="info-card.svg?v=12">
+    <source media="(prefers-color-scheme: light)" srcset="info-card.svg?v=12">
+    <img alt="Himanshu Developer Config Info Card" src="info-card.svg?v=12" width="60%" align="right">
+  </picture>
 </div>
 
-<br>
+<br clear="both">
+
 
 ```java
 class HimanshuMenghani {
